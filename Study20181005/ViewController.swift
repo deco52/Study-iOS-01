@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelText: UILabel!
+    
+    @IBAction func tapGreen(_ sender: Any) {
+        view.backgroundColor = UIColor.green
+        labelText.text = "GREEN!!"
+    }
+    
+    @IBAction func tapWhite(_ sender: Any) {
+        view.backgroundColor = UIColor.white
+        labelText.text = "WHITE!!"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
