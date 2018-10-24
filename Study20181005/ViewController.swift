@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var labelText: UILabel!
+    @IBOutlet weak var editText: UITextField!
+    var inputText: String?
     
     @IBAction func tapGreen(_ sender: Any) {
         view.backgroundColor = UIColor.green
@@ -31,7 +32,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //次の画面への値渡し処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        var viewController2 = segue.destination as! ViewController2
+        viewController2.recieveText = editText.text
+    }
+    
+    // 入力欄以外をタップした時キーボードを隠す
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        inputText = editText?.text
+        self.view.endEditing(true)
+    }
+    
 
 }
 
