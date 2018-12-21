@@ -285,6 +285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5W8NYFP57;
 				INFOPLIST_FILE = Study20181005/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C5W8NYFP57;
 				INFOPLIST_FILE = Study20181005/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

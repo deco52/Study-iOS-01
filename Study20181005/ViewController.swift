@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func tapWhite(_ sender: Any) {
         view.backgroundColor = UIColor.white
-        labelText.text = "WHITE!!"
+        labelText.text = "WHITE!!!"
     }
     
     override func viewDidLoad() {

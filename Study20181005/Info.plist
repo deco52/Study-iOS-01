@@ -2,6 +2,21 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+        <key>NSExpectionDomains</key>
+        <dict>
+            <key>157.80.87.247</key>
+            <dict>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <false/>
+            </dict>
+        </dict>
+	</dict>
+	<key>NFCReaderUsageDescription</key>
+	<string>研究で使うNFC機能のテスト</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
